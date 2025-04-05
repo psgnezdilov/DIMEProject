@@ -114,18 +114,24 @@
     <h1 class="text-center">Still have questions?</h1>
     <h2 class="text-center">Send us an email</h2>
     <div class="d-flex justify-content-center">
-    <form class="row g-3 needs-validation justify-content-center w-75 p-4 mt-2 border border-secondary-subtle rounded" id="myForm">
+    <form class="row g-3 needs-validation justify-content-center w-75 p-4 mt-2 border border-secondary-subtle rounded" id="myForm" novalidate>
       <div class="col-md-4">
         <label for="validationCustom01" class="form-label">First name</label>
         <input type="text" class="form-control" id="validationCustom01" required>
+        <div class="invalid-feedback">Please provide your first name</div>
+        <div class="valid-feedback">Looking good!</div>
       </div>
       <div class="col-md-4">
         <label for="validationCustom02" class="form-label">Last name</label>
         <input type="text" class="form-control" id="validationCustom02" required>
+        <div class="invalid-feedback">Please provide your last name</div>
+        <div class="valid-feedback">Looking good!</div>
       </div>
       <div class="col-md-8">
         <label for="validationCustomEmail" class="form-label">Email</label>
-        <input type="text" class="form-control" id="validationCustomEmail" required>
+        <input type="email" class="form-control" id="validationCustomEmail" required>
+        <div class="invalid-feedback">Please provide a valid email</div>
+        <div class="valid-feedback">Looking good!</div>
       </div>
       <div class="col-md-8">
         <label for="validationSubject" class="form-label">Subject</label>
@@ -136,10 +142,14 @@
           <option>Features</option>
           <option>Other</option>
         </select>
+        <div class="invalid-feedback">Please select a valid subject</div>
+        <div class="valid-feedback">Looking good!</div>
       </div>
       <div class="col-md-8">
         <label for="validationTextarea" class="form-label">Message</label>
         <textarea class="form-control" id="validationTextarea" rows="3" required></textarea>
+        <div class="invalid-feedback">Please enter your message</div>
+        <div class="valid-feedback">Looking good!</div>
       </div>
       <div class="col-md-8">
         <button class="button btn btn-primary" type="submit" id="ToastBtn">Submit</button>
