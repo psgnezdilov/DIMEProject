@@ -12,32 +12,94 @@
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossorigin="anonymous"></script>
 </head>
-<body>
-<nav class="navbar bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">AI StudySaver</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Main Menu</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="container-fluid d-flex w-auto justify-content-evenly">
-          <button type="button" class="btn btn-outline-secondary">Sign in</button>
-          <button type="button" class="btn btn-primary">Sign up</button>
-        </div>
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-        </ul>
-      </div>
+<body class="vh-100">
+<div class="vh-100 d-flex flex-column">
+<nav class="navbar bg-body-tertiary fixed-top shadow-sm">
+  <div class="container-fluid mx-2">
+    <a class="navbar-brand" href="../index.html">AI StudySaver</a>
+    <a type="button" class="btn btn-light mx-1" href="">Product</a>
+    <a type="button" class="btn btn-light mx-1" href="">Market & Customer</a>
+    <a type="button" class="btn btn-light mx-1" href="">Business & Financials</a>
+    <a type="button" class="btn btn-light mx-1" href="">Our Team</a>
+    <div class="ms-auto justify-content-evenly">
+      <a type="button" class="btn btn-light align-items-center p-1" href="" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Contact Us">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+        </svg>
+      </a>
+      <a type="button" class="btn btn-outline-secondary mx-3" href="../signin/index.html">Sign in</a>
+      <a type="button" class="btn btn-primary" href="../signup/index.html">Sign up</a>
     </div>
   </div>
 </nav>
+<main class="mt-5 flex-grow-1 d-flex align-items-center justify-content-center">
+<div class="d-flex justify-content-center align-items-center">
+  <div class="w-75 shadow p-3 bg-body-tertiary rounded">
+    <h3>Contact Us</h3>
+    <hr>
+    <form class="row g-3 needs-validation justify-content-center p-4 mt-2 w-100 h-100" id="myForm" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" required>
+        <div class="invalid-feedback">Please provide your first name</div>
+        <div class="valid-feedback">Looking good!</div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" required>
+        <div class="invalid-feedback">Please provide your last name</div>
+        <div class="valid-feedback">Looking good!</div>
+      </div>
+      <div class="col-md-8">
+        <label for="validationCustomEmail" class="form-label">Email</label>
+        <input type="email" class="form-control" id="validationCustomEmail" required>
+        <div class="invalid-feedback">Please provide a valid email</div>
+        <div class="valid-feedback">Looking good!</div>
+      </div>
+      <div class="col-md-8">
+        <label for="validationSubject" class="form-label">Subject</label>
+        <select class="form-select" id="validationSubject" required>
+          <option selected disabled value="">Choose</option>
+          <option>General query</option>
+          <option>Subscription</option>
+          <option>Features</option>
+          <option>Other</option>
+        </select>
+        <div class="invalid-feedback">Please select a valid subject</div>
+        <div class="valid-feedback">Looking good!</div>
+      </div>
+      <div class="col-md-8">
+        <label for="validationTextarea" class="form-label">Message</label>
+        <textarea class="form-control" id="validationTextarea" rows="3" required></textarea>
+        <div class="invalid-feedback">Please enter your message</div>
+        <div class="valid-feedback">Looking good!</div>
+      </div>
+      <div class="col-md-8">
+        <button class="button btn btn-primary w-100" type="submit" id="ToastBtn">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="Toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Notification</strong>
+      <small>Now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Your message has been sent successfully.
+    </div>
+  </div>
+</div>
+</main>
+<footer class="d-flex flex-wrap justify-content-between align-items-center p-3 border-top bg-body-secondary">
+  <img class="footer-logo" src="assets/images/robot.png" alt="App logo">
+  <span class="mb-3 me-2 mb-md-0 text-body-secondary">&copy; 2025 AI StudySaver</span>
+</footer>
+<script src="../assets/header.js"></script>
+<script src="../assets/forms.js"></script>
+</div>
 </body>
 </html>

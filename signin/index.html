@@ -12,7 +12,7 @@
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="vh-100 d-flex flex-column">
 <nav class="navbar bg-body-tertiary fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">AI StudySaver</a>
@@ -39,5 +39,72 @@
     </div>
   </div>
 </nav>
+<main class="d-flex flex-grow-1 align-items-center justify-content-center">
+<div class="w-75 shadow p-3 bg-body-tertiary rounded">
+  <h3 class="text-center">Register</h3>
+  <hr>
+  <form class="row g-3 needs-validation justify-content-center p-4 mt-2 w-100 h-100" id="myForm" novalidate>
+    <div class="col-md-4">
+      <label for="validationCustom01" class="form-label">First name</label>
+      <input type="text" class="form-control" id="validationCustom01" required>
+      <div class="invalid-feedback">Please provide your first name</div>
+      <div class="valid-feedback">Looking good!</div>
+    </div>
+    <div class="col-md-4">
+      <label for="validationCustom02" class="form-label">Last name</label>
+      <input type="text" class="form-control" id="validationCustom02" required>
+      <div class="invalid-feedback">Please provide your last name</div>
+      <div class="valid-feedback">Looking good!</div>
+    </div>
+    <div class="col-md-8">
+      <label for="validationCustomEmail" class="form-label">Email</label>
+      <input type="email" class="form-control" id="validationCustomEmail" required>
+      <div class="invalid-feedback">Please provide a valid email</div>
+      <div class="valid-feedback">Looking good!</div>
+    </div>
+    <div class="col-md-8">
+      <label for="validationCustom03" class="form-label">Username</label>
+      <div class="input-group has-validation">
+        <span class="input-group-text" id="inputGroupPrepend">@</span>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">Please choose a username</div>
+        <div class="valid-feedback">Looking good!</div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <label for="validationPassword" class="form-label">Password</label>
+      <input class="form-control" id="validationPassword" type="password" required>
+      <div class="invalid-feedback">Please enter your message</div>
+      <div class="valid-feedback">Looking good!</div>
+    </div>
+    <div class="col-md-8">
+      <button class="btn btn-primary w-100" type="submit" id="ToastBtn">Submit</button>
+    </div>
+    <hr>
+    <div class="col-md-8">
+    <h3 class="text-center mb-3">Already registered?</h3>
+    <a class="btn btn-outline-secondary w-100" href="../signin/index.html">Sign in</a>
+    </div>
+  </form>
+</div>
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="Toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <strong class="me-auto">Notification</strong>
+      <small>Now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Your message has been sent successfully.
+    </div>
+  </div>
+</div>
+</main>
+<footer class="d-flex flex-wrap justify-content-between align-items-center p-3 border-top bg-body-secondary">
+  <img class="footer-logo" src="assets/images/robot.png" alt="App logo">
+  <span class="mb-3 me-2 mb-md-0 text-body-secondary">&copy; 2025 AI StudySaver</span>
+</footer>
+<script src="../assets/header.js"></script>
+<script src="assets/index.js"></script>
 </body>
 </html>
