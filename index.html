@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="assets/index.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"></script>
 </head>
 <body>
 <nav class="navbar bg-body-secondary fixed-top">
@@ -113,10 +110,63 @@
       </div>
     </div>
   </section>
+  <section class="my-3">
+    <h1 class="text-center">Still have questions?</h1>
+    <h2 class="text-center">Send us an email</h2>
+    <div class="d-flex justify-content-center">
+    <form class="row g-3 needs-validation justify-content-center w-75 p-4 mt-2 border border-secondary-subtle rounded" id="myForm">
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">First name</label>
+        <input type="text" class="form-control" id="validationCustom01" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Last name</label>
+        <input type="text" class="form-control" id="validationCustom02" required>
+      </div>
+      <div class="col-md-8">
+        <label for="validationCustomEmail" class="form-label">Email</label>
+        <input type="text" class="form-control" id="validationCustomEmail" required>
+      </div>
+      <div class="col-md-8">
+        <label for="validationSubject" class="form-label">Subject</label>
+        <select class="form-select" id="validationSubject" required>
+          <option selected disabled value="">Choose</option>
+          <option>General query</option>
+          <option>Subscription</option>
+          <option>Features</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="col-md-8">
+        <label for="validationTextarea" class="form-label">Message</label>
+        <textarea class="form-control" id="validationTextarea" rows="3" required></textarea>
+      </div>
+      <div class="col-md-8">
+        <button class="button btn btn-primary" type="submit" id="ToastBtn">Submit</button>
+      </div>
+    </form>
+    </div>
+  </section>
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="Toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <strong class="me-auto">Notification</strong>
+        <small>Now</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Your message has been sent successfully.
+      </div>
+    </div>
+  </div>
 </main>
-<footer class="d-flex flex-wrap justify-content-between align-items-center p-3 my-4 border-top bg-body-secondary">
+<footer class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top bg-body-secondary">
     <img class="footer-logo" src="assets/images/robot.png" alt="App logo">
     <span class="mb-3 me-2 mb-md-0 text-body-secondary">&copy; 2025 AI StudySaver</span>
 </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="assets/index.js"></script>
 </html>
