@@ -9,67 +9,41 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
-<body>
-<nav class="navbar bg-body-secondary fixed-top">
-  <div class="container-fluid">
+<body class="d-flex flex-column vh-100">
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid mx-2">
     <a class="navbar-brand" href="index.html">AI StudySaver</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Main Menu</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="container-fluid d-flex w-auto justify-content-evenly">
-          <button type="button" class="btn btn-outline-secondary">Sign in</button>
-          <button type="button" class="btn btn-primary">Sign up</button>
-        </div>
-        <hr>
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/about/index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/market_customer/index.html">Market & Customer</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="business/index.html">Business & Financial Highlights</a>
-          </li>
-        </ul>
-        <hr>
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-          <a class="nav-link" href="team/index.html">Our Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact/index.html">Contact Us</a>
-          </li>
-        </ul>
-      </div>
+    <a type="button" class="btn btn-light mx-1" href="about/index.html">Product</a>
+    <a type="button" class="btn btn-light mx-1" href="market_customer/index.html">Market & Customer</a>
+    <a type="button" class="btn btn-light mx-1" href="business/index.html">Business & Financials</a>
+    <a type="button" class="btn btn-light mx-1" href="team/index.html">Our Team</a>
+    <div class="ms-auto justify-content-evenly">
+      <a type="button" class="btn btn-light align-items-center p-1" href="contact/index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Contact Us">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+        </svg>
+      </a>
+      <a type="button" class="btn btn-outline-secondary mx-3" href="signin/index.html">Sign in</a>
+      <a type="button" class="btn btn-primary" href="signup/index.html">Sign up</a>
     </div>
   </div>
 </nav>
-<main class="mt-5">
-<div class="banner-container vstack gap-2 pt-3">
-  <div>
-  <h1 class="text-center mx-auto my-auto">AI StudySaver</h1>
-  <h2 class="text-center">Accessible and science-backed learning anywhere, anytime</h2>
-  </div>
-  <div class="hstack gap-5 my-4 justify-content-center">
-    <button type="button" class="btn btn-outline-secondary">Sign in</button>
-    <button type="button" class="btn btn-primary">Sign up</button>
-  </div>
+<main class="overflow-scroll">
+<div class="banner-container">
 </div>
-  <section class="vstack gap-3 col-md-5 mx-auto mt-4">
+  <section class="container mt-3">
+    <h2 class="text-center">AI StudySaver</h2>
+    <h3 class="text-center">Accessible and science-backed learning anywhere, anytime</h3>
+    <hr>
+    <p class="text-center">Explore the world of new possibilities and features to radically change the way you study.
+      No more unnecessary waste of time trying to learn something but never remembering it,
+      with our brand-new product you will be able to benefit from the science-based
+      learning protocols among with personalized AI Tutor.</p>
+  </section>
+  <section class="vstack gap-3 col-md-5 mt-5 container">
     <div>
-    <h3 class="text-center">What is this app all about?</h3>
-    <h4 class="text-center">Here are the main features</h4>
+    <h3 class="text-center">Main features of the app</h3>
     </div>
     <div class="accordion" id="Accordion">
       <div class="accordion-item">
@@ -110,73 +84,17 @@
       </div>
     </div>
   </section>
-  <section class="my-3">
-    <h1 class="text-center">Still have questions?</h1>
-    <h2 class="text-center">Send us an email</h2>
-    <div class="d-flex justify-content-center">
-    <form class="row g-3 needs-validation justify-content-center w-75 p-4 mt-2 border border-secondary-subtle rounded" id="myForm" novalidate>
-      <div class="col-md-4">
-        <label for="validationCustom01" class="form-label">First name</label>
-        <input type="text" class="form-control" id="validationCustom01" required>
-        <div class="invalid-feedback">Please provide your first name</div>
-        <div class="valid-feedback">Looking good!</div>
-      </div>
-      <div class="col-md-4">
-        <label for="validationCustom02" class="form-label">Last name</label>
-        <input type="text" class="form-control" id="validationCustom02" required>
-        <div class="invalid-feedback">Please provide your last name</div>
-        <div class="valid-feedback">Looking good!</div>
-      </div>
-      <div class="col-md-8">
-        <label for="validationCustomEmail" class="form-label">Email</label>
-        <input type="email" class="form-control" id="validationCustomEmail" required>
-        <div class="invalid-feedback">Please provide a valid email</div>
-        <div class="valid-feedback">Looking good!</div>
-      </div>
-      <div class="col-md-8">
-        <label for="validationSubject" class="form-label">Subject</label>
-        <select class="form-select" id="validationSubject" required>
-          <option selected disabled value="">Choose</option>
-          <option>General query</option>
-          <option>Subscription</option>
-          <option>Features</option>
-          <option>Other</option>
-        </select>
-        <div class="invalid-feedback">Please select a valid subject</div>
-        <div class="valid-feedback">Looking good!</div>
-      </div>
-      <div class="col-md-8">
-        <label for="validationTextarea" class="form-label">Message</label>
-        <textarea class="form-control" id="validationTextarea" rows="3" required></textarea>
-        <div class="invalid-feedback">Please enter your message</div>
-        <div class="valid-feedback">Looking good!</div>
-      </div>
-      <div class="col-md-8">
-        <button class="button btn btn-primary" type="submit" id="ToastBtn">Submit</button>
-      </div>
-    </form>
-    </div>
+  <section class="container d-flex">
+    Placeholder for cards with other site subpages
   </section>
-  <div class="toast-container position-fixed bottom-0 end-0 p-3">
-    <div id="Toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-      <div class="toast-header">
-        <strong class="me-auto">Notification</strong>
-        <small>Now</small>
-        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-      </div>
-      <div class="toast-body">
-        Your message has been sent successfully.
-      </div>
-    </div>
-  </div>
-</main>
-<footer class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top bg-body-secondary">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top bg-body-secondary">
     <img class="footer-logo" src="assets/images/robot.png" alt="App logo">
     <span class="mb-3 me-2 mb-md-0 text-body-secondary">&copy; 2025 AI StudySaver</span>
-</footer>
+  </footer>
+</main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-<script src="assets/index.js"></script>
+<script src="assets/header.js"></script>
 </html>
