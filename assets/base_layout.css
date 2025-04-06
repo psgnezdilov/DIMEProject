@@ -1,3 +1,18 @@
 .footer-logo {
   width: 2rem;
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 5px;
+}
+
+.dropdown:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 5px;
+  display: block;
+}
