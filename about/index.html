@@ -1,43 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AI StudySaver</title>
-  <link rel="stylesheet" href="../assets/base_layout.css"/>
-  <link rel="stylesheet" href="assets/index.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/base_layout.css">
+  <link rel="stylesheet" href="assets/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"></script>
 </head>
-<body>
-<nav class="navbar bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">AI StudySaver</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Main Menu</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="container-fluid d-flex w-auto justify-content-evenly">
-          <button type="button" class="btn btn-outline-secondary">Sign in</button>
-          <button type="button" class="btn btn-primary">Sign up</button>
-        </div>
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-        </ul>
-      </div>
+<body class="d-flex flex-column vh-100">
+
+<!-- Header -->
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid mx-2">
+    <a class="navbar-brand" href="../index.html">AI StudySaver</a>
+    <div class="dropdown">
+      <button type="button" class="btn btn-light" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Product
+        <svg fill="#000000" height="15px" width="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier"><path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></g></svg>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="../about/index.html">About Product</a></li>
+        <li><a class="dropdown-item" href="../subscriptions/index.html">Subscription Tiers</a></li>
+      </ul>
+    </div>
+    <a type="button" class="btn btn-light mx-1" href="../market_customer/index.html">Market & Customer</a>
+    <a type="button" class="btn btn-light mx-1" href="../business/index.html">Business & Financials</a>
+    <a type="button" class="btn btn-light mx-1" href="../team/index.html">Our Team</a>
+    <div class="ms-auto justify-content-evenly">
+      <a type="button" class="btn btn-light align-items-center p-1" href="../contact/index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Contact Us">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+        </svg>
+      </a>
+      <a type="button" class="btn btn-outline-secondary mx-3" href="../signin/index.html">Sign in</a>
+      <a type="button" class="btn btn-primary" href="../signup/index.html">Sign up</a>
     </div>
   </div>
 </nav>
+
+<!-- Hero -->
+<main class="overflow-scroll">
+<section class="hero mt-3">
+  <h1>Our product</h1>
+  <p>Personalized schedules that adapt to your exams, assignments, and availability. Focus on tough subjects while the app adjusts as you progress!</p>
+  <a class="btn btn-dark" href="#features">Learn More</a>
+</section>
+
+<!-- Feature Image -->
+<img src="https://static.vecteezy.com/system/resources/thumbnails/002/174/574/small/hexagonal-abstract-technology-background-illustration-vector.jpg" alt="Feature Graphic" class="feature-img" />
+
+<!-- Features -->
+<section class="features" id="features">
+  <h2>What does our app do?</h2>
+  <div class="feature-grid">
+    <div class="feature">
+      <div class="image-container">
+      <img src="https://johnthebaptistcs.ie/wp-content/uploads/2016/12/Study-Skills.jpg" alt="Study Guide" />
+      </div>
+      <div class="feature-content">
+        <h3>Personalized study guide!</h3>
+        <p>Our app creates plans based on the user's course! Making studying simple and efficient.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="image-container">
+      <img src="https://images.squarespace-cdn.com/content/v1/5fbdd5b15687f52b6b6e067d/1613196772763-NMMB90UEJKR6IX3OFRCU/study.jpg" alt="Flash Cards" />
+      </div>
+      <div class="feature-content">
+        <h3>AI generated flash cards!</h3>
+        <p>Our app uses AI to create flash cards which help with learning new materials while also saving time.</p>
+      </div>
+    </div>
+    <div class="feature">
+      <div class="image-container">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYnqUIf2OOSvGq8bd3DLUu7WZ2J7kO4UPEYA&s" alt="Community" />
+      </div>
+      <div class="feature-content">
+        <h3>A supporting community!</h3>
+        <p>AI StudySaver has a large and supportive community which helps keep you motivated.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Other -->
+<section style="padding: 4rem 2rem; display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; max-width: 1100px; margin: 0 auto;">
+  <div style="flex: 1 1 400px;">
+    <h2 style="font-weight: 700; font-size: 2rem; margin-bottom: 2rem;">What else?</h2>
+    <p style="margin-bottom: 1rem; font-weight: 400;">
+      Progress tracking and personal feedback, dynamic quizzes and test
+      creation and topic specific resources with online ebooks. Our app ensures that users stay engaged.
+      It makes learning fun while also being interesting.
+      Our cutting edge AI features make sure that your quest for knowledge is personalized to you!
+    </p>
+    <a class="btn btn-dark btn-lg me-2" href="../index.html">Home</a>
+    <button class="btn btn-lg btn-secondary">Download Our App Here</button>
+  </div>
+  <div style="flex: 1 1 400px;">
+    <img src="assets/images/robot.png" alt="Additional Features" style="width: 100%; border-radius: 8px;">
+  </div>
+</section>
+
+
+<!-- Footer -->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center p-3 mt-4 border-top bg-body-secondary">
+    <img class="footer-logo" src="../assets/images/robot.png" alt="App logo">
+    <div class="d-flex align-items-center socials">
+
+    </div>
+    <span class="me-2 mb-md-0 text-body-secondary">&copy; 2025 AI StudySaver. All rights reserved.</span>
+  </footer>
+</main>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="../assets/header.js"></script>
 </html>
