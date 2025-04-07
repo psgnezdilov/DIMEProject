@@ -16,3 +16,14 @@
   height: 5px;
   display: block;
 }
+
+#myForm.was-validated #rememberMeCheckbox:valid,
+#myForm.was-validated #rememberMeCheckbox:invalid {
+  background-image: none;
+  border-color: var(--bs-border-color);
+  box-shadow: none;
+}
+
+#myForm.was-validated .form-check-label[for="rememberMeCheckbox"] {
+  color: inherit;
+}
