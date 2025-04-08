@@ -1,0 +1,65 @@
+body {
+  background-color: #f8f9fa;
+}
+.card {
+  transition: transform 0.2s ease-in-out;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 0.75rem;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card-header {
+  background-color: #e9ecef;
+  font-weight: bold;
+  border-bottom: none;
+  border-top-left-radius: 0.75rem;
+  border-top-right-radius: 0.75rem;
+}
+.card-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+.card-subtitle {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+.price-unit {
+  font-size: 1rem;
+  color: #6c757d;
+}
+.feature-list {
+  list-style: none;
+  padding-left: 0;
+}
+.feature-list li {
+  margin-bottom: 0.75rem;
+}
+.feature-list li::before {
+  content: '✓';
+  color: #28a745;
+  margin-right: 8px;
+  font-weight: bold;
+}
+.btn-choose {
+  width: 100%;
+  padding: 0.75rem;
+  font-weight: bold;
+}
+.popular-plan {
+  border: 2px solid #0d6efd;
+  position: relative;
+  overflow: hidden;
+}
+.popular-badge {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  background-color: #0d6efd;
+  color: white;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-bottom-left-radius: 0.5rem;
+}
