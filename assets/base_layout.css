@@ -26,6 +26,10 @@
   fill: #333333;
 }
 
+.dropdown:hover #dropdown {
+  background-color: var(--bs-btn-active-bg);
+}
+
 /*For sign in page*/
 #myForm.was-validated #rememberMeCheckbox:valid,
 #myForm.was-validated #rememberMeCheckbox:invalid {
