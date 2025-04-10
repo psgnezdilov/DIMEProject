@@ -7,6 +7,9 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/index.css">
   <link rel="stylesheet" href="../assets/base_layout.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 </head>
 <body class="d-flex flex-column vh-100">
 <nav class="navbar bg-body-tertiary">
@@ -41,67 +44,67 @@
 </nav>
 <main class="overflow-scroll">
 <section class="team-section">
-  <div class="container">
+  <div class="container justify-content-center text-center">
     <h2 class="text-center section-title">Click to Learn More About Our Team</h2>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center align-items-center w-75 mx-auto">
 
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card team-card-modal-trigger text-center" data-bs-toggle="modal" data-bs-target="#memberModal1">
-          <img src=""
+          <img src="assets/images/alex.jpeg"
                class="card-img-top"
                alt="Aleksandra Raudive">
           <div class="card-body">
             <h5 class="card-title">Aleksandra Raudive</h5>
-            <p class="card-text">Placeholder</p>
+            <p class="card-text">CEO</p>
           </div>
         </div>
       </div>
 
-      <div class="col-4">
+      <div class="col-md-4">
+        <div class="card team-card-modal-trigger text-center" data-bs-toggle="modal" data-bs-target="#memberModal5">
+          <img src="assets/images/pavel.HEIC"
+               class="card-img-top"
+               alt="Pavel Soshenko Gnezdilov">
+          <div class="card-body">
+            <h5 class="card-title">Pavel Soshenko Gnezdilov</h5>
+            <p class="card-text">CTO</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
         <div class="card team-card-modal-trigger text-center" data-bs-toggle="modal" data-bs-target="#memberModal2">
           <img src=""
                class="card-img-top"
                alt="Daniel Ibikunle">
           <div class="card-body">
             <h5 class="card-title">Daniel Ibikunle</h5>
-            <p class="card-text">Placeholder</p>
+            <p class="card-text">Market Researcher</p>
           </div>
         </div>
       </div>
 
-      <div class="col-4">
-        <div class="card team-card-modal-trigger text-center" data-bs-toggle="modal" data-bs-target="#memberModal3">
-          <img src=""
+      <div class="col-md-4">
+        <div class="card team-card-modal-trigger text-center lucy-card" data-bs-toggle="modal" data-bs-target="#memberModal3">
+          <img src="assets/images/lucy.jpeg"
                class="card-img-top"
                alt="Lucy Fennelly">
           <div class="card-body">
             <h5 class="card-title">Lucy Fennelly</h5>
-            <p class="card-text">Placeholder</p>
+            <p class="card-text">Lead Designer</p>
           </div>
         </div>
       </div>
 
-      <div class="col-4">
+      <div class="col-md-4">
         <div class="card team-card-modal-trigger text-center" data-bs-toggle="modal" data-bs-target="#memberModal4">
-          <img src=""
+          <img src="assets/images/niall.jpeg"
                class="card-img-top"
                alt="Niall O Donoghue">
           <div class="card-body">
             <h5 class="card-title">Niall O Donoghue</h5>
-            <p class="card-text">Placeholder</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-4">
-        <div class="card team-card-modal-trigger text-center" data-bs-toggle="modal" data-bs-target="#memberModal5">
-          <img src="assets/images/IMG_4447.HEIC"
-               class="card-img-top"
-               alt="Pavel Soshenko Gnezdilov">
-          <div class="card-body">
-            <h5 class="card-title">Pavel Soshenko Gnezdilov</h5>
-            <p class="card-text">Placeholder</p>
+            <p class="card-text">Marketing Manager</p>
           </div>
         </div>
       </div>
@@ -118,8 +121,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="" class="modal-img" alt="Alexandra Raudive">
-        <p class="text-center text-primary fw-bold mb-3">Placeholder</p>
+        <img src="assets/images/alex.jpeg" class="modal-img" alt="Alexandra Raudive">
+        <p class="text-center text-primary fw-bold mb-3">Chief Executive Officer</p>
         <p class="modal-bio">
           Placeholder
         </p>
@@ -149,7 +152,7 @@
       </div>
       <div class="modal-body">
         <img src="" class="modal-img" alt="Daniel Ibikunle">
-        <p class="text-center text-primary fw-bold mb-3">Placeholder</p>
+        <p class="text-center text-primary fw-bold mb-3">Market Researcher</p>
         <p class="modal-bio">
           Placeholder
         </p>
@@ -178,8 +181,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="" class="modal-img" alt="Lucy Fennelly">
-        <p class="text-center text-primary fw-bold mb-3">Placeholder</p>
+        <img src="assets/images/lucy.jpeg" class="modal-img" alt="Lucy Fennelly">
+        <p class="text-center text-primary fw-bold mb-3">Lead Designer</p>
         <p class="modal-bio">
           Placeholder
         </p>
@@ -208,7 +211,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="" class="modal-img" alt="Niall O Donoghue">
+        <img src="assets/images/niall.jpeg" class="modal-img" alt="Niall O Donoghue">
         <p class="text-center text-primary fw-bold mb-3">Marketing Manager</p>
         <p class="modal-bio">
           Placeholder
@@ -238,8 +241,8 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <img src="assets/images/IMG_4447.HEIC" class="modal-img" alt="Pavel Soshenko Gnezdilov">
-        <p class="text-center text-primary fw-bold mb-3">Placeholder</p>
+        <img src="assets/images/pavel.HEIC" class="modal-img" alt="Pavel Soshenko Gnezdilov">
+        <p class="text-center text-primary fw-bold mb-3">Chief Technology Officer</p>
         <p class="modal-bio">
           Placeholder
         </p>
