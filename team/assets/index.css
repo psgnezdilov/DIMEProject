@@ -2,14 +2,14 @@ body {
   background-color: #f8f9fa;
 }
 .team-section {
-  padding: 60px 0;
+  padding: 55px 0;
 }
 .section-title {
-  margin-bottom: 50px;
-  font-weight: 700;
+  margin-bottom: 45px;
+  font-weight: 600;
 }
 .team-card-modal-trigger {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   border: none;
   border-radius: 15px;
@@ -31,12 +31,12 @@ body {
   padding: 20px;
 }
 .team-card-modal-trigger .card-title {
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 5px;
 }
 .team-card-modal-trigger .card-text {
   color: var(--bs-secondary);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* Modal Styling */
@@ -45,7 +45,7 @@ body {
   padding-bottom: 0;
 }
 .modal-title {
-  font-weight: 600;
+  font-weight: 500;
   color: #343a40;
 }
 .modal-body {
@@ -61,9 +61,9 @@ body {
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
 }
 .modal-bio {
-  font-size: 0.95rem;
+  font-size: 1rem;
   color: #495057;
-  line-height: 1.6;
+  line-height: 1.5;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -95,6 +95,6 @@ body {
   color: var(--bs-primary);
 }
 .modal-social-links img {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
