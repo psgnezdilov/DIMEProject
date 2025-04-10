@@ -8,36 +8,222 @@
   <link rel="stylesheet" href="assets/index.css"/>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"></script>
 </head>
-<body>
-<nav class="navbar bg-body-tertiary fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">AI StudySaver</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Main Menu</h4>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <div class="container-fluid d-flex w-auto justify-content-evenly">
-          <button type="button" class="btn btn-outline-secondary">Sign in</button>
-          <button type="button" class="btn btn-primary">Sign up</button>
-        </div>
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-        </ul>
-      </div>
+<body class="d-flex flex-column vh-100">
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid mx-2">
+    <a class="navbar-brand" href="../index.html">AI StudySaver</a>
+    <div class="dropdown">
+      <button type="button" class="btn btn-light" id="dropdown" data-bs-toggle="dropdown" aria-expanded="false">Product
+        <svg fill="#000000" height="15px" width="15px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+          <g id="SVGRepo_iconCarrier"><path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393 c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393 s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"></path></g></svg>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="../about/index.html">About Product</a></li>
+        <li><a class="dropdown-item" href="../subscriptions/index.html">Subscription Tiers</a></li>
+      </ul>
+    </div>
+    <a type="button" class="btn btn-light mx-1" href="../market_customer/index.html">Market & Customer</a>
+    <a type="button" class="btn btn-light mx-1" href="../business/index.html">Business & Financials</a>
+    <a type="button" class="btn btn-light mx-1" href="../team/index.html">Our Team</a>
+    <div class="ms-auto justify-content-evenly">
+      <a type="button" class="btn btn-light align-items-center p-1" href="../contact/index.html" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Contact Us">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-question-circle" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+          <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286m1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94"/>
+        </svg>
+      </a>
+      <a type="button" class="btn btn-outline-secondary mx-3" href="../signin/index.html">Sign in</a>
+      <a type="button" class="btn btn-primary" href="../signup/index.html">Sign up</a>
     </div>
   </div>
 </nav>
+<main class="overflow-scroll">
+<section class="container py-5">
+    <h2 class="text-center mb-4">WHY US?</h2>
+    <p class="text-left">
+      
+      At AI StudySaver we understand the challenges students can face when it comes to studying effectively. Unlike other study tools on the market like Quizlet and Studyable that offer generic learning content and basic AI tools, AI StudySaver adapts to your schedule and learning experience, ensuring you retain your information and  focus only on the material that matters most to your goals. The AI Tutor not only helps you review material but also provides personalized spaced quizzes for memory retention, one of the features that sets us apart from basic study apps to help you you achieve academic success. <br><br>  Choose AI StudySaver for: </p>
+      <ul class="list-group">
+        <li class="list-group-item"> <strong>Personalized Learning: </strong> Adaptive study plans that adjust based on your progress and schedule.</li>
+        <li class="list-group-item"><strong>AI Tutor:</strong> Access to advanced AI Tutors for help and personalized guidance.</li>
+        <li class="list-group-item"><strong>Affordable Pricing:</strong> A flexible subscription plan with premium features at a competitive price/value ratio.</li>
+        <li class="list-group-item"><strong>Memory Retention:</strong> Techniques grounded in scientifically backed methods like spaced repetition for memory retention.</li>
+        <li class="list-group-item"><strong>Unlock Your Full Potential: </strong> Study smarter, not harder, and take control of your academic success.</li>
+      </ul>
+  </section>
+  
+  <section class="container py-5">
+    <h3 class="text-center mb-4">OUR CUSTOMER BASE</h3>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="assets/images/student_1.jpg" class="card-img-top" alt="Persona Image">
+          <div class="card-body">
+            <h5 class="card-title">Emily</h5>
+            <p class="card-text">
+              Emily is a student at DCU who struggles with balancing school <b>and</b> work. The automatic scheduling feature in our app helps her manage her time, so she can focus on studying while still having time for her social life.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="assets/images/student_2.jpg" class="card-img-top" alt="Persona Image">
+          <div class="card-body">
+            <h5 class="card-title">Alex</h5>
+            <p class="card-text">
+              Alex is a secondary school student preparing for the Leaving Cert. With <b>six</b> subjects to balance, Alex uses the app’s timed quizzes and flashcards to stay organized and focused, ultimately improving performance across all subjects.
+            </p>
+          </div>
+        </div>
+      </div>
+   
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="assets/images/working_woman.jpg" class="card-img-top" alt="Persona Image">
+          <div class="card-body">
+            <h5 class="card-title">Olivia</h5>
+            <p class="card-text">
+                Olivia works <b>full-time</b> but has a passion for psychology. With a busy life, she uses the app to learn on the go, Olivia is able to review her psychology notes, take quizzes, and engage with study material in a way that fits her busy schedule.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container py-5 bg-light">
+    <h3 class="text-center mb-4">JUST LISTEN TO OUR CUSTOMERS!</h3>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <p>"As a self-learner, how personalized the study plans are. It adapts to my schedule and learning pace."</p>
+              <footer class="blockquote-footer">Lucas Taylor <cite title="Source">Verified User</cite><p>★★★★★</p></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+   
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <p>"The subscription tiers are affordable, and the premium features are totally worth the price."</p>
+              <footer class="blockquote-footer">Noah Evans <cite title="Source">Verified User</cite><p>★★★★★</p></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <p>"I love studying anytime, anywhere the app lets me learn and review material in short sessions."</p>
+              <footer class="blockquote-footer">Liam Clark <cite title="Source">Verified User</cite><p>★★★★☆</p></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <p>"I love the progress tracking feature. It keeps me motivated and on track with my goals."</p>
+              <footer class="blockquote-footer">Ava Johnson <cite title="Source">Verified User</cite><p>★★★★★</p></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+ 
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <p>"The quizzes help me retain what I've studied. It's like having a personal tutor."</p>
+              <footer class="blockquote-footer">Jane Smith <cite title="Source">Verified User</cite><p>★★★★☆</p></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <div class="card-body">
+            <blockquote class="blockquote">
+              <p>"I can't believe how much this app has helped me stay organized. Worth every penny!"</p>
+              <footer class="blockquote-footer">Sophia Mitchell <cite title="Source">Verified User</cite><p>★★★★★</p></footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="container py-5 text-center">
+  <h4>DOWNLOAD THE APP NOW!</h4>
+  <div class="d-flex justify-content-center mb-4">
+
+    <div class="mx-3">
+      <img src="assets/images/google-logo.webp" alt="Google Play Store" class="store-logo" />
+      <div class="ratings">
+        <p class="lead">1.5K Ratings</p>
+        <p class="h5">4.2 ★★★★☆</p>
+      </div>
+    </div>
+
+    <div class="mx-3">
+      <img src="assets/images/apple-logo.webp" alt="App Store" class="store-logo" />
+      <div class="ratings">
+        <p class="lead">1.1K Ratings</p>
+        <p class="h5">4.5 ★★★★☆</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <footer class="bg-body-tertiary p-3">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-center">
+        <div class="col">
+          <img class="footer-logo" src="../assets/images/robot.png" alt="App logo">
+        </div>
+        <div class="col justify-content-center d-flex">
+          <div class="hstack gap-3">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+              </svg>
+            </a>
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-reddit" viewBox="0 0 16 16">
+                <path d="M6.167 8a.83.83 0 0 0-.83.83c0 .459.372.84.83.831a.831.831 0 0 0 0-1.661m1.843 3.647c.315 0 1.403-.038 1.976-.611a.23.23 0 0 0 0-.306.213.213 0 0 0-.306 0c-.353.363-1.126.487-1.67.487-.545 0-1.308-.124-1.671-.487a.213.213 0 0 0-.306 0 .213.213 0 0 0 0 .306c.564.563 1.652.61 1.977.61zm.992-2.807c0 .458.373.83.831.83s.83-.381.83-.83a.831.831 0 0 0-1.66 0z"/>
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-3.828-1.165c-.315 0-.602.124-.812.325-.801-.573-1.9-.945-3.121-.993l.534-2.501 1.738.372a.83.83 0 1 0 .83-.869.83.83 0 0 0-.744.468l-1.938-.41a.2.2 0 0 0-.153.028.2.2 0 0 0-.086.134l-.592 2.788c-1.24.038-2.358.41-3.17.992-.21-.2-.496-.324-.81-.324a1.163 1.163 0 0 0-.478 2.224q-.03.17-.029.353c0 1.795 2.091 3.256 4.669 3.256s4.668-1.451 4.668-3.256c0-.114-.01-.238-.029-.353.401-.181.688-.592.688-1.069 0-.65-.525-1.165-1.165-1.165"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-end">
+          <span class="me-2 mb-md-0 text-body-secondary">&copy; 2025 AI StudySaver. All rights reserved.</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+</main>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="../assets/header.js"></script>
 </body>
 </html>
